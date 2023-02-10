@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+:root {
+  --mw: 1440px;
+  --gap1: 16px;
+  --gap2: 8px;
+  --main_c1: #ff6b00;
+  background-color: #fcf8ee;
+  font-family: "Hahmlet", serif;
+}
+
+body > * {
+  max-width: var(--mw);
+  margin: auto;
+}
+
+.hd {
+  margin-bottom: var(--gap1);
+}
+.hd > * {
+  /* border: 1px solid red; */
+}
+
+.top_menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: var(--gap2) 0;
+}
+.top_menu > * {
+  margin-left: var(--gap1);
+  /* border: 1px solid lightgreen; */
+  padding: var(--gap2) 0;
+  transition: 0.3s;
+  font-size: 0.9rem;
+  color: #000000;
+}
+.top_menu > button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+.top_menu > *:hover {
+  color: var(--main_c1);
+}
+
+.fa-toggle-off {
+  display: none;
+}
+.darkmode.on .fa-toggle-off {
+  display: block;
+}
+.darkmode.on .fa-toggle-on {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--gap2) 0;
+}
+.menu > * {
+  /* border: 1px solid blue; */
+}
+.menu a {
+  font-size: 20px;
+  font-weight: 500;
+}
+.logo {
+  width: 200px;
+}
+.menu img {
+  width: 100%;
+}
+
+.gnb {
+  /* flex-grow: 1; */
+  display: flex;
+}
+.gnb a {
+  padding: var(--gap2) calc(var(--gap1) * 2);
+  color: #000000;
+  transition: 0.3s;
+  position: relative;
+  display: inline-block;
+}
+.gnb a:hover {
+  color: var(--main_c1);
+}
+
+.gnb a::before,
+.gnb a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--main_c1);
+  transition: 0.5s;
+}
+.gnb a::before {
+  left: 50%;
+}
+.gnb a::after {
+  right: 50%;
+}
+.gnb a:hover::before,
+.gnb a:hover::after {
+  width: 50%;
+}
+
+.btn_subsc {
+  /* text-align: right; */
+}
+.btn_subsc span {
+  padding: var(--gap2) calc(var(--gap1) * 2);
+  background-color: var(--main_c1);
+  border-radius: var(--gap2);
+  color: white;
+  display: inline-block;
+}
+
+/* 메인영역 시작 */
+.sec1 {
+  display: flex;
+  height: 60vh;
+  border: 2px solid lightgreen;
+}
+.intro {
+  width: 25%;
+  padding-top: 30%;
+  border: 1px solid gold;
+  position: relative;
+}
+
+.chatbox {
+  border: 1px solid green;
+  background-image: url(../image/chatbox_2.5pt_rev.png);
+  background-size: 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 120%;
+
+  padding: 2rem 1rem 7rem 1rem;
+  position: absolute;
+  top: 0;
+  /* left: -50%; */
+  right: 0;
+  z-index: 10;
+  /* background-color: #ceeaff; */
+}
+.chatbox p:first-child {
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.intro img {
+  position: absolute;
+  z-index: 1;
+  border: 1px solid red;
+  /* width: 80%; */
+  height: 70%;
+  bottom: 0;
+  left: -20%;
+}
+
+.mid_banner {
+  border: 1px solid red;
+  display: flex;
+}
+
+.sec2 {
+  border: 1px solid blue;
+  display: flex;
+}
+
+.premium {
+  display: flex;
+}
