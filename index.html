@@ -24,9 +24,15 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/common.css" />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="./css/common.js" defer></script>
   </head>
   <body>
-    <header class="hd">
+    <header class="hd mw">
       <div class="top_menu">
         <button class="darkmode on">
           <i class="fa-solid fa-toggle-off" title="다크모드에서 보임"></i>
@@ -48,17 +54,20 @@
           <a href="#">뉴닉탄생기</a>
         </div>
         <a href="#" class="btn_subsc"><span>구독하기</span></a>
-        <button class="ham"><i class="fa-solid fa-bars"></i></button>
       </nav>
     </header>
-    <section class="sec1">
+    <button class="ham"><i class="fa-solid fa-bars"></i></button>
+    <section class="sec1 mw">
       <div class="intro">
         <div class="chatbox">
-          <p>우리가 시간이 없지, 세상이 안 궁금하냐!</p>
+          <p>
+            우리가 시간이 없지, <br />
+            세상이 안 궁금하냐!
+          </p>
           <p>
             세상 돌아가는 소식, 알고는 싶지만 <br />신문 볼 새 없이 바쁜게 우리
-            탓은 아니잖아요! <br />월~금 아침 세상 돌아가는 소식을 메일로
-            받아보세요.
+            탓은 아니잖아요! <br />월~금 아침 세상 돌아가는 소식을 <br />
+            메일로 받아보세요.
           </p>
         </div>
         <img src="./image/chat_gosum.png" alt="인트로고슴" />
@@ -68,58 +77,52 @@
         <div class="swiper slide1">
           <ul class="swiper-wrapper">
             <li class="swiper-slide">
-              <a href="#">
-                <div class="card_recent">
-                  <img src="./image/card1_img.jpg" alt="카드1" />
-                  <p>2023/02/01 노동</p>
-                  <p>필수의료 인력 부족 문제와 대책</p>
-                </div>
-              </a>
+              <div class="card_recent">
+                <img src="./image/card1_img.jpg" alt="카드1" />
+                <p>2023/02/02 노동</p>
+                <p>필수의료 인력 부족 문제와 대책</p>
+                <a href="#"></a>
+              </div>
             </li>
             <li class="swiper-slide">
-              <a href="#">
-                <div class="card_recent">
-                  <img src="./image/card1_img.jpg" alt="카드1" />
-                  <p>2023/02/01 노동</p>
-                  <p>필수의료 인력 부족 문제와 대책</p>
-                </div>
-              </a>
+              <div class="card_recent">
+                <img src="./image/card2_img.jpg" alt="카드2" />
+                <p>2023/02/02 경제</p>
+                <p>삼성전자, SK하이닉스 반도체 실적 악화</p>
+                <a href="#"></a>
+              </div>
             </li>
             <li class="swiper-slide">
-              <a href="#">
-                <div class="card_recent">
-                  <img src="./image/card1_img.jpg" alt="카드1" />
-                  <p>2023/02/01 노동</p>
-                  <p>필수의료 인력 부족 문제와 대책</p>
-                </div>
-              </a>
+              <div class="card_recent">
+                <img src="./image/card3_img.jpg" alt="카드3" />
+                <p>2023/02/01 세계</p>
+                <p>시위에 부딪힌 프랑스 연금개혁</p>
+                <a href="#"></a>
+              </div>
             </li>
             <li class="swiper-slide">
-              <a href="#">
-                <div class="card_recent">
-                  <img src="./image/card1_img.jpg" alt="카드1" />
-                  <p>2023/02/01 노동</p>
-                  <p>필수의료 인력 부족 문제와 대책</p>
-                </div>
-              </a>
+              <div class="card_recent">
+                <img src="./image/card1_img.jpg" alt="카드1" />
+                <p>2023/02/02 노동</p>
+                <p>필수의료 인력 부족 문제와 대책</p>
+                <a href="#"></a>
+              </div>
             </li>
             <li class="swiper-slide">
-              <a href="#">
-                <div class="card_recent">
-                  <img src="./image/card1_img.jpg" alt="카드1" />
-                  <p>2023/02/01 노동</p>
-                  <p>필수의료 인력 부족 문제와 대책</p>
-                </div>
-              </a>
+              <div class="card_recent">
+                <img src="./image/card2_img.jpg" alt="카드2" />
+                <p>2023/02/02 경제</p>
+                <p>삼성전자, SK하이닉스 반도체 실적 악화</p>
+                <a href="#"></a>
+              </div>
             </li>
             <li class="swiper-slide">
-              <a href="#">
-                <div class="card_recent">
-                  <img src="./image/card1_img.jpg" alt="카드1" />
-                  <p>2023/02/01 노동</p>
-                  <p>필수의료 인력 부족 문제와 대책</p>
-                </div>
-              </a>
+              <div class="card_recent">
+                <img src="./image/card3_img.jpg" alt="카드3" />
+                <p>2023/02/01 세계</p>
+                <p>시위에 부딪힌 프랑스 연금개혁</p>
+                <a href="#"></a>
+              </div>
             </li>
           </ul>
         </div>
@@ -141,7 +144,7 @@
         </div>
       </div>
     </section>
-    <section class="sec2">
+    <section class="sec2 mw">
       <div class="min1">
         <div>
           <p>오늘의 1분뉴스</p>
@@ -173,17 +176,17 @@
         </div>
       </div>
     </section>
-    <section class="sec3">
+    <section class="sec3 mw">
       <h2>
         프리미엄 컨텐츠 <a href="#"><i class="fa-solid fa-plus"></i></a>
       </h2>
       <div class="premium">
-        <a href="#"><img src="./image/pre1.png" alt="프리미엄부동산" /></a>
-        <a href="#"><img src="./image/pre2.png" alt="프리미엄재테크" /></a>
-        <a href="#"><img src="./image/pre3.png" alt="프리미엄인문학" /></a>
+        <a href="#"><img src="./image/pre1_re.png" alt="프리미엄부동산" /></a>
+        <a href="#"><img src="./image/pre2_re.png" alt="프리미엄재테크" /></a>
+        <a href="#"><img src="./image/pre3_re.png" alt="프리미엄인문학" /></a>
       </div>
     </section>
-    <section class="sec4">
+    <section class="sec4 mw">
       <h2>
         뉴닉's SNS <a href="#"><i class="fa-solid fa-plus"></i></a>
       </h2>
@@ -196,7 +199,7 @@
       </div>
     </section>
     <footer class="ft">
-      <div class="ft_wrap">
+      <div class="ft_wrap mw">
         <div class="ft_menu">
           <a href="#"
             ><img class="ft_logo" src="./image/logo_newneek.png" alt="로고"
@@ -222,20 +225,5 @@
         </div>
       </div>
     </footer>
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-      let swiper = new Swiper(".slide1", {
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        slidesPerView: 2.5,
-        spaceBetween: 30,
-      });
-    </script>
   </body>
 </html>
